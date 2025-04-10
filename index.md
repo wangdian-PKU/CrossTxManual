@@ -1,6 +1,6 @@
-# CrossTx
+## Author: Dian Wang, Guiwen Guan
 
-![workflow](./figures/Typora\picture\workflow.png) 
+![workflow](./figure/workflow.png) 
 
 ## Introduction
 
@@ -57,7 +57,7 @@ This function requires DEG result files from TCGA and mouse models in **`.tsv`**
 
 Example `.tsv` or `.csv` format after being read:
 
-![image-20250328182346528](./figures/Typora\picture\image-20250328182346528.png)
+![image-20250328182346528](./figure/image-20250328182346528.png)
 
 #### 1.3 Function Parameters
 
@@ -499,7 +499,7 @@ rownames(count) <- toupper(rownames(count))
 count <- rownames_to_column(count,var = "X") # The var parameter must set as "X"
 ```
 
-![image-20250329165049491](./figures/Typora\picture\image-20250329165049491.png)
+![image-20250329165049491](./figure/image-20250329165049491.png)
 
 The input expression files (for both TCGA and mouse models) must:
 
@@ -637,11 +637,11 @@ This function prepares TCGA patient-level clinical and CNV (copy number variatio
 
 - The input clinical_file must be separated by **tabs** and contain the column named "**PATIENT_ID**". And the character value in "PATIENT ID" should be **unique**!!! The table read using `read.table(clinic_file_path, header = TRUE, sep = "\t", stringsAsFactors = FALSE)`  is presented in the figure.
 
-![image-20250329205321249](./figures/Typora\picture\image-20250329205321249.png)
+![image-20250329205321249](./figure/image-20250329205321249.png)
 
 - The input cnv_file should be a tab-separated dataframe with rows representing gene symbols and columns representing TCGA PATIENT_IDs. The table read using `read.table (cnv_file_path, header=TRUE, sep="\ t", stringsAsFactors=False)` is presented in the figure.
 
-![image-20250329220009226](./figures/Typora\picture\image-20250329220009226.png)
+![image-20250329220009226](./figure/image-20250329220009226.png)
 
 #### 8.3  Function Parameters
 
@@ -1219,7 +1219,7 @@ We warmly welcome contributions and suggestions! Please feel free to open an iss
 
 ## Contact
 
-- **Author:** *Dian Wang*
+- **Author:** *Dian Wang*, Guiwen Guan
 - **Email:** wangdian020803@gmail.com
 - **GitHub:**[CrossTx](https://github.com/wangdian-PKU/CrossTx)
 
